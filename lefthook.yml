@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "*.{js,ts,jsx,tsx.vue}"
+      run: eslint --fix --max-warnings 0 {staged_files} && git add {staged_files}
+    stylelint:
+      glob: "*.{less,css.vue}"
+      run: stylelint --fix {staged_files} && git add {staged_files}
+    prettier:
+      glob: "*.{js,ts,jsx,tsx.vue}"
+      run: prettier --write {staged_files} && git add {staged_files}
