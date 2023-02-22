@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     'browser': true,
     'node': true,
@@ -9,7 +10,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:vue/vue3-recommended',
-    "prettier"
+    'plugin:prettier/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -27,9 +28,11 @@ module.exports = {
     'vue/multi-word-component-names': 0,
     'import/no-extraneous-dependencies': 0,
     'no-debugger': 1,
+    // eslint-plugin-import rule
     'import/order': [
       'warn',
       {
+        warnOnUnassignedImports: true,
         groups: [
           'builtin',
           'external',

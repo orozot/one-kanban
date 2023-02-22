@@ -1,11 +1,9 @@
 module.exports = {
-  plugins: ['stylelint-prettier'],
+  plugins: ['stylelint-less', 'stylelint-prettier'],
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-standard-scss',
+    'stylelint-config-recommended-vue',
     'stylelint-config-recess-order',
-    'stylelint-config-prettier',
-    'stylelint-prettier/recommended'
   ],
   defaultSeverity: "warning",
   rules: {
