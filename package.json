@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint:commit": "commitlint",
     "lint:eslint": "eslint --cache --max-warnings 0 --report-unused-disable-directives --ext .js,.vue,.ts,.tsx,.jsx .",
     "lint:prettier": "prettier --check '**/*.{js,ts,jsx,tsx,vue}'",
     "lint:stylelint": "stylelint -q --rd '**/*.{less,css,vue}'"
