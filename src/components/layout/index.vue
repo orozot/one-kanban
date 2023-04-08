@@ -12,11 +12,10 @@
   </div>
 </template>
 
-
 <style lang="less" scoped>
-.layout {
-  .nav-container {
-    background-color: rgba(0, 71, 255, 0.08);
+  .layout {
+    .nav-container {
+      background-color: rgba(0, 71, 255, 0.08);
+    }
   }
-}
 </style>
