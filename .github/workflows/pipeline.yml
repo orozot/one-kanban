@@ -1,6 +1,7 @@
 name: One Kanban Pipeline
 
 on:
+  workflow_dispatch:
   push:
     branches: [ $default-branch ]
   pull_request:
