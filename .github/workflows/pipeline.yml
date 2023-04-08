@@ -16,8 +16,13 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 6.24.4
+          run_install:
+            args: [ --frozen-lockfile ]
       - name: Lint commit message
         run: pnpm run commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
@@ -29,8 +34,13 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 6.24.4
+          run_install:
+            args: [--frozen-lockfile]
       - name: ESLint
         run: pnpm run lint:eslint
       - name: Prettier
@@ -46,7 +56,12 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 6.24.4
+          run_install:
+            args: [ --frozen-lockfile ]
       - name: Build code with PNPM
         run: pnpm run build
