@@ -4,7 +4,7 @@ import { clientRoutes } from '@/router/routes';
 const baseRoutes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Root',
     redirect: '/home',
   },
 ];
