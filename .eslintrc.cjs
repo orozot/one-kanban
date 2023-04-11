@@ -27,6 +27,7 @@ module.exports = {
     // 'vue/no-unused-vars': 'error'
     'vue/multi-word-component-names': 0,
     'import/no-extraneous-dependencies': 0,
+    'import/prefer-default-export': 'off',
     'no-debugger': 1,
     // eslint-plugin-import rule
     'import/order': [
