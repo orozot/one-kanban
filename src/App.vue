@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="less" scoped>
   .logo {
     height: 6em;
     padding: 1.5em;

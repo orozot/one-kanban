@@ -1,11 +1,10 @@
-<script setup></script>
+<script setup>
+  import Menus from '@/components/menus/index.vue';
+</script>
 
 <template>
   <div class="layout tw-flex tw-h-full">
-    <nav class="nav-container tw-w-80 jh-p-6">
-      <div class="nav-item">My boards</div>
-      <div class="nav-item">My boards 2</div>
-    </nav>
+    <menus class="nav-container tw-w-80" />
     <div class="layout-content tw-flex-1">
       <slot name="content"></slot>
     </div>
@@ -15,7 +14,7 @@
 <style lang="less" scoped>
   .layout {
     .nav-container {
-      background-color: rgba(0, 71, 255, 0.08);
+      //background-color: rgba(0, 71, 255, 0.08);
     }
   }
 </style>
